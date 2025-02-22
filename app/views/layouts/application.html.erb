@@ -14,9 +14,11 @@
 
   <body>
       <div class="header-container">
-      <h1 class="boards-title">Boards</h1>
-      <%= image_tag "cb658a3a6926eff2c8b7191774ba4438 (1).png", alt: "User Icon", class: "profile-icon" %>
-    </div>
+        <h1 class="boards-title">Boards</h1>
+        <%= image_tag "cb658a3a6926eff2c8b7191774ba4438 (1).png", alt: "User Icon", class: "profile-icon" %>
+      </div>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
