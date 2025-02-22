@@ -8,9 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
 
   <body>
+      <div class="header-container">
+      <h1 class="boards-title">Boards</h1>
+      <%= image_tag "cb658a3a6926eff2c8b7191774ba4438 (1).png", alt: "User Icon", class: "profile-icon" %>
+    </div>
     <%= yield %>
   </body>
 </html>

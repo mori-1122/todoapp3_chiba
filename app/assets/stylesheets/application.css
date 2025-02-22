@@ -1,15 +1,41 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+    width: 414px;
+    height: 921px; 
+    margin: 0 auto;
+    padding: 26px;
+    font-family: Avenir, sans-serif;
+    background-color: #fff;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* 背景色 */
+    padding: 20px 16px; /* 余白を追加 */
+    border-bottom: 1px solid black
+  }
+  
+  .boards-title {
+    color: #000;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%; /* 丸いアイコンにする */
+    object-fit: cover; /* 画像の比率を維持 */
+  }
+  
