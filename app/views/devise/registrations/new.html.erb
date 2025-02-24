@@ -1,28 +1,23 @@
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
+  <div>
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, class: "input-field",  placeholder: "メールアドレスを入力してください" ,autocomplete: "email" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <div>
+    <%= f.label :password %><br />
+    <%= f.password_field :password, placeholder:"パスワードを入力してください", autocomplete: "off", class: "input-field" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div>
+    <%= f.label :password_confirmation, "Password Confirmation" %><br />
+    <%= f.password_field :password_confirmation, placeholder: "パスワードを再度入力してください", autocomplete: "off", class: "input-field" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div>
+    <%= f.submit "Submit", class: "btn btn-submit" %>
   </div>
 <% end %>
 
