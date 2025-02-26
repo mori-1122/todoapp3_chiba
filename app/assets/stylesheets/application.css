@@ -38,4 +38,128 @@ body {
     border-radius: 100%; /* 丸いアイコンにする */
     object-fit: cover; /* 画像の比率を維持 */
   }
-  
+/* Boards一覧のスタイル */
+.boards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Boardカードのスタイル */
+.board-card {
+  width: 362px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Boardのタイトル */
+.board-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Boardの説明 */
+.board-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Boardのユーザー情報 */
+.board-user {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.board-user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Edit & Deleteボタン */
+.board-card div {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* "+ Add new board" ボタン */
+.add-board {
+  width: 362px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.add-board:hover {
+  background-color: #f0f0f0;
+}
+
+/* New Board Page Styles */
+
+h1 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Name（タイトル）の入力フィールド */
+.input-field {
+  width: 362px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #F4F4F4;
+  font-size: 16px;
+}
+
+/* Description（説明）の入力フィールド */
+textarea.input-field {
+  width: 362px;
+  height: 203px;
+  resize: none;
+}
+
+/* 送信ボタン */
+.btn-submit {
+  width: 100%;
+  height: 40px;
+  background-color: #F8BD1C;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: none;
+
+}
+
+.btn-submit:hover {
+  background-color: #c6a752;
+}

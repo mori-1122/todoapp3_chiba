@@ -1,0 +1,20 @@
+<h1>All Boards</h1>
+
+<div class="boards-container">
+  <% @boards.each do |board| %>
+    <div class="board-card">
+      <h3><%= board.title %></h3>
+
+      <p><%= board.description %></p>
+      <div class="board-user">
+        <%= image_tag "930f9e1e5c25e9e34066ff7fcd0e3f58.png", class: "board-user-icon" %>
+        <span><% board.user.email %></span>
+      </div>
+    </div>
+  <% end %>
+
+  <%= link_to "+ Add new board", new_board_path, class: "add-board" %>
+</div>
+
+
+<%# 削除、編集ボタンを作成 %>
