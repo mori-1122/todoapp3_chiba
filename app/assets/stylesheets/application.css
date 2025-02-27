@@ -3,7 +3,6 @@
 *:after {
   box-sizing: border-box;
   margin: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -50,7 +49,7 @@ body {
 /* Boardカードのスタイル */
 .board-card {
   width: 362px;
-  background: #F9F9F9;
+  background: #F4F4F4;
   border-radius: 10px;
   padding: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -66,8 +65,16 @@ body {
 /* Boardの説明 */
 .board-card p {
   font-size: 14px;
-  color: #666;
+  color: #3e3d3d;
   margin: 5px 0;
+}
+
+.board-footer {
+  display: flex;
+  justify-content: space-between; /* アイコンと3点メニューを左右に配置 */
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
 }
 
 /* Boardのユーザー情報 */
@@ -82,13 +89,6 @@ body {
   height: 30px;
   border-radius: 50%;
   margin-right: 8px;
-}
-
-/* Edit & Deleteボタン */
-.board-card div {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
 }
 
 /* "+ Add new board" ボタン */
@@ -163,3 +163,6 @@ textarea.input-field {
 .btn-submit:hover {
   background-color: #c6a752;
 }
+
+
+/* ボタンのレイアウト */
