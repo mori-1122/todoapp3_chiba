@@ -36,9 +36,8 @@ class BoardsController < ApplicationController
   end
 
   def destroy
-    board = Board.find(params[:id])
-    # エラーが発生したら例外発生
-    board.destroy!
+    @board = Board.find(params[:id])
+    @board.destroy!
     redirect_to boards_path, notice: "Board was successfully deleted."
   end
 
