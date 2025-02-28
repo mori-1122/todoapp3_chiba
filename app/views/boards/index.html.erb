@@ -1,0 +1,18 @@
+<h1>All Boards</h1>
+
+<div class="boards-container">
+  <% @boards.each do |board| %>
+    <div class="board-card">
+      <!-- タイトルをクリックすると show ページに遷移 -->
+      <h3><%= link_to board.title, board_path(board) %></h3>
+      <p><%= truncate(board.description, length: 50) %></p> <%# 50文字まで表示 %>
+
+      <div class="board-footer">
+        <div class="board-user">
+          <%= image_tag "930f9e1e5c25e9e34066ff7fcd0e3f58.png", class: "board-user-icon" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <%= link_to "+ Add new board", new_board_path, class: "add-board" %>
+</div>

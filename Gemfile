@@ -68,4 +68,5 @@ group :test do
   gem 'jquery-rails'
   gem "sassc-rails"
   gem 'devise'
+  gem "faker"
 end
