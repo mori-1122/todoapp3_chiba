@@ -15,7 +15,7 @@
       <div class="header-container">
         <h1 class="boards-title">Boards</h1>
           <%# ユーザーがサインインしている場合のみを表示 %>
-          <% if user_signed_in? %>
+           <% if user_signed_in? %>
             <%= image_tag "cb658a3a6926eff2c8b7191774ba4438 (1).png", alt: "User Icon", class: "profile-icon" %>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
           <% end %>
