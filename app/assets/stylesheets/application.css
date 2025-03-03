@@ -45,6 +45,8 @@ body {
   border-radius: 10px;
   padding: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none !important; /* 強制適用 */
+  display: block;
 }
 
 /* Boardのタイトル */
@@ -101,7 +103,6 @@ body {
   background-color: #f0f0f0;
 }
 
-
 /* New Board Page Styles */
 
 h1 {
@@ -138,6 +139,10 @@ textarea.input-field {
 }
 
 /* btn-submitボタン */
+.btn-container {
+  text-align: center;
+}
+
 .btn-submit {
   width: 100%;
   height: 40px;
@@ -154,4 +159,16 @@ textarea.input-field {
 
 .btn-submit:hover {
   background-color: #c6a752;
+}
+.task-eyecatch img {
+  border-radius: 10px;
+  width: 100%; /* 必要に応じて調整 */
+  height: auto;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
