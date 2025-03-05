@@ -16,7 +16,7 @@
   <%= link_to board_task_path(@board, task), class: "task-link" do %>
     <div class="board-card mt-3">
       <% if task.eyecatch.attached? %>
-        <%= image_tag task.eyecatch %>
+        <%= image_tag task.eyecatch, width: 360, height: 170%>
       <% end %>
 
       <h3><%= task.title %></h3>
