@@ -182,3 +182,44 @@ textarea.input-field {
   justify-content: space-between;
   width: 100%;
 }
+
+/* comment */
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  color: #000;
+  font-family: Avenir;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.comment-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%; /* 丸いアイコンにする */
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.comment-header p {
+  margin: 0;
+}
+
+.comment-input {
+  width: 100%;
+  height: auto;
+  min-height: 60px; /* テキストエリアの最低の高さを設定 */
+  background: transparent; /* 背景色を透明にする */
+  border: none; /* ボーダーを消す */
+  outline: none; /* フォーカス時の枠線を消す */
+  font-size: 16px;
+  resize: none; /* リサイズ禁止 */
+  padding: 10px;
+  color: #333;
+}
