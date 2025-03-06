@@ -1,0 +1,8 @@
+<h1>New Comment</h1>
+
+<%= form_with(model: @comment, url: board_task_comments_path(@board, @task), local: true) do |f| %>
+  <div class="board-card">
+    <%= f.text_area :content, required: true, class: "comment-input", placeholder: "コメントを入力してください"  %>
+  </div>
+  <%= f.submit "Submit", class: "btn btn-submit mt-3" %>
+<% end %>

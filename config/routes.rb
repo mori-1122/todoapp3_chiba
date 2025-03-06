@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'boards#index'
   resources :boards do
-    resources :tasks, only: %i[new create show edit update destroy]
+    resources :tasks do
+      resources :comments, only: %i[new create destroy]
+    end
   end
 end
