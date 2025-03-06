@@ -62,6 +62,8 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'bootstrap', '~> 5.3.0'
   gem 'capybara'
   gem 'devise'
