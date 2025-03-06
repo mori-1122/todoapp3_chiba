@@ -12,6 +12,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to board_path(@board), notice: '作成されました'
     else
+      Rails.logger.debug @task.errors.full_messages # エラーの詳細をログに出力
       render :new, status: :unprocessable_entity
     end
   end
@@ -34,6 +35,7 @@ class TasksController < ApplicationController
 
   def show
     @task = @board.tasks.find(params[:id])
+    @comments = @task.comments.includes(:user)
   end
 
   private

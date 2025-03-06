@@ -20,4 +20,25 @@
     <small>期限: <%= @task.due_date.strftime("%Y-%m-%d") %></small>
 </div>
 
-<%= link_to "Back to Board", board_path(@board), class: "btn btn-submit mt-3"%>
+<!-- コメント一覧 -->
+<%# タスクに対するコメントがすべて表示される %>
+<div class="comment-header">
+    <h2>Comment</h2>
+</div>
+
+<div class="comment-list">
+  <% @comments.each do |comment|  %>
+    <div class="comment">
+      <div class="comment-header">
+        <%# ユーザーのアバターを表示し、なければデフォルトの user.png を表示 %>
+        <% if comment.user.respond_to?(:avatar) && comment.user.avatar.attached? %>
+          <%= image_tag comment.user.avatar, class: "comment-icon" %>
+        <% else %>
+          <%= image_tag "user.png", class: "comment-icon" %>
+          <p><%= comment.content %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "+ Add new comment", new_board_task_comment_path(@board, @task), class: "add-board mt-3"  %>
