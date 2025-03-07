@@ -1,0 +1,16 @@
+{
+    "name": "todoapp3_chiba",
+    "description": "This is todoapp3_chiba",
+    "keywords": [],
+    "website": "",
+    "repository": "https://github.com/mori-1122/todoapp3_chiba",
+    "env": {},
+    "addons": [
+      "heroku-postgresql:hobby-dev"
+    ],
+    "buildpacks": [{
+      "url": "heroku/nodejs"
+    }, {
+      "url": "heroku/ruby"
+    }]
+  }
