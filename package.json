@@ -1,7 +1,7 @@
 {
   "name": "todoapp3",
   "version": "1.0.0",
-  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "Railsアプリに必要なNode.jsパッケージ",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
