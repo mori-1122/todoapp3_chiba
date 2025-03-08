@@ -51,6 +51,10 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
+group :development, :test, :production do
+  gem 'devise'
+end
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
